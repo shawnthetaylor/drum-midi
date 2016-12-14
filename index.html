@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Drumset</title>
+    <link rel='stylesheet' type='text/css' href='./styles.css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <link rel='shortcut icon' href='favicon.ico'>
+  </head>
+  <body>
+    <section class='Drumset'>
+      <h1 class='title'>Midi Drumset Player</h1>
+      <p class='directions'>
+        Hit the keys that correspond to the midi board controls
+        to cause a ruckus.
+      </p>
+      <section class='Drumset-midi'>
+        <div data-code='65' class='Drumset-midi-control'>
+          <h2 class='key'>A</h2>
+          <p class='sound'>Clap</p>
+        </div>
+        <div data-code='83' class='Drumset-midi-control'>
+          <h2 class='key'>S</h2>
+          <p class='sound'>Hihat</p>
+        </div>
+        <div data-code='68' class='Drumset-midi-control'>
+          <h2 class='key'>D</h2>
+          <p class='sound'>Kick</p>
+        </div>
+        <div data-code='70' class='Drumset-midi-control'>
+          <h2 class='key'>F</h2>
+          <p class='sound'>Openhat</p>
+        </div>
+        <div data-code='71' class='Drumset-midi-control'>
+          <h2 class='key'>G</h2>
+          <p class='sound'>Boom</p>
+        </div>
+        <div data-code='72' class='Drumset-midi-control'>
+          <h2 class='key'>H</h2>
+          <p class='sound'>Ride</p>
+        </div>
+        <div data-code='74' class='Drumset-midi-control'>
+          <h2 class='key'>J</h2>
+          <p class='sound'>Snare</p>
+        </div>
+        <div data-code='75' class='Drumset-midi-control'>
+          <h2 class='key'>K</h2>
+          <p class='sound'>Tom</p>
+        </div>
+        <div data-code='76' class='Drumset-midi-control'>
+          <h2 class='key'>L</h2>
+          <p class='sound'>Tink</p>
+        </div>
+      </section>
+    </sectio  n>
+
+    <audio data-code='65' src='sounds/clap.wav'></audio>
+    <audio data-code='83' src='sounds/hihat.wav'></audio>
+    <audio data-code='68' src='sounds/kick-oldschool.wav'></audio>
+    <audio data-code='70' src='sounds/openhat.wav'></audio>
+    <audio data-code='71' src='sounds/kick-thump.wav'></audio>
+    <audio data-code='72' src='sounds/ride.wav'></audio>
+    <audio data-code='74' src='sounds/snare-pinch.wav'></audio>
+    <audio data-code='75' src='sounds/snare-tape.wav'></audio>
+    <audio data-code='76' src='sounds/tom-808.wav'></audio>
+
+    <script type='text/javascript' src='./drums.js'></script>
+  </body>
+</html>

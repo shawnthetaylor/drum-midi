@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  background: #f2efe9;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  font-size: 2rem;
+  letter-spacing: -1px;
+  margin: auto auto 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.directions {
+  margin: 0;
+  text-align: center;
+}
+
+.Drumset {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.Drumset-midi {
+  background: #222;
+  border-radius: 4px;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 500px;
+  justify-items: stretch;
+  margin: auto;
+  padding: 1rem;
+  width: 500px;
+}
+
+.Drumset-midi-control {
+  background: #222;
+  border: 8px solid #11b5e4;
+  border-radius: 4px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  transform: scale(1);
+  transition: border .07s, transform .07s;
+}
+
+.Drumset-midi-control.active {
+  border: 7px solid #11b5e4;
+  transform: scale(.9);
+}
+
+.key {
+  font-size: 3rem;
+  margin: auto;
+  text-align: center;
+}
+
+.sound {
+  font-size: .7rem;
+  letter-spacing: 1px;
+  margin: auto;
+  text-transform: uppercase;
+}
